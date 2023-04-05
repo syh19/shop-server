@@ -13,11 +13,11 @@ const seq = new Sequelize(MYSQL_DB, MYSQL_USER, MYSQL_PWD, {
   // timezone: '+08:00'
 })
 
-module.exports = seq
-
 // 测试数据库是否连接成功
 // seq.authenticate().then(() => {
 //   console.log("数据库连接成功")
 // }).catch((err) => {
 //   console.log("数据库连接失败", err)
 // })
+
+module.exports = seq

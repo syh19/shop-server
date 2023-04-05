@@ -1,7 +1,8 @@
+const UserModel = require('../model/user.model')
 class UserService {
-  async createUser(user_name, password) {
-    // #TODO 写入数据库的逻辑
-    return '写入成功'
+  async createUser (user_name, password) {
+    const res = await UserModel.create({ user_name, password })
+    return res.dataValues
   }
 }
 
