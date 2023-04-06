@@ -10,5 +10,11 @@ module.exports = {
     code: 10002,
     msg: '用户已经存在',
     data: null
+  },
+  /** 用户注册错误 */
+  userRegisterError: {
+    code: 10003,
+    msg: '用户注册错误',
+    data: null
   }
 }
